@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display&family=Inter:wght@400;500;600&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Oswald:wght@700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #f8f8f8;
+}
+
+#navigation{
+    background-color: #f8f8f8 !important;
+    position: relative;
+    z-index: 1000;
+}
+nav{
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-img{
+    width: 30px;
+}
+.nav-img img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+/* hero section */
+.hero__section{
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+.main__text{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 80%;
+}
+.main__text h1{
+    color: #fff;
+    font-size: 26px;
+}
+.main__text span{
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.9rem;
+}
+.main__text p{
+    color: #fff;
+    font-size: 14px;
+}
+.hero__section img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.hero__section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(18, 18, 75, 0.34);
+    width: 100%;
+    height: 100%;
+}
+
+.hero__content{
+    position: relative;
+}
+
+.slider{
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+.slider h4{
+    font-weight: 300;
+    font-size: 20px;
+}
+.bg-color-dark p{
+    background-color: #dee8f0;
+    padding: 2rem 1rem;
+}
+#navigation{
+    display: flex !important;
+    justify-content: space-between !important;
+}
+.navbar-brand{
+    color: #333 !important;
+}
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+    color: #333;
+    font-weight: 400;
+    position: relative;
+}
+.navline{
+    position: relative !important;
+}
+a{
+    text-decoration: none !important;
+    position: relative;
+    transition: 0.3s ease;
+    font-size: 15px;
+    font-weight: 800;
+}
+a:hover{
+    color: darkblue !important;
+}
+
+
+/* about  */
+.about-banner{
+    width: 100%;
+    height: 100%;
+}
+.about-banner img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.media-icon{
+    max-width: 40%;
+}
+.overlap-div{
+    position: relative;
+    top: -65px;
+    z-index: 10;
+    background-color: #fff;
+    padding: 1.6rem 2rem;
+}
+.bx{
+    min-width: 40px;
+    min-height: 40px;
+    background-color: #8298cc;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.bx:hover{
+    transform: scale(1.129);
+    background-color: #32323333;
+    background-origin: content-box;
+}
+.a-heading{
+    font-size: 25px;
+    font-weight: 400;
+}
+.about__bio{
+    margin-top: 3rem;
+    text-justify: newspaper;
+}
+
+
+#root > div > div:nth-child(n) > div > form > div:nth-child(n) > div:nth-child(n) > input{
+    padding: 0px 5px;
+    margin: 1rem 0;
+}
+#root > div > div:nth-child(n) > div > form > div:nth-child(n) > div.col-md-6.flex > div.col-md-10.mx-0.p-0 > input,
+#root > div > div:nth-child(4) > div > form > div:nth-child(2) > div:nth-child(2) > input{
+    padding: 0px 5px;
+    margin: .6rem 0;
+}
+
+
+/* footer */
+.full-footer{
+    width: 100%;
+    background-color: #8298cc;
+    text-align: center;
+    color: #fff;
+    padding: 4% 0;
+    position: relative;
+    z-index: 100;
+}
+.footer-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+/* join */
+.joinForm input{
+    border: none;
+    border-bottom: 1px solid #3333;
+    font-size: 14px;
+    outline: none;
+    margin-bottom: 12px;
+    border-radius: 0;
+    background-color: transparent;
+}
+.img-box{
+    width: 300px;
+    position: relative;
+}
+.img-box img{
+    width: 100%;
+    height: auto;
+}
+
+
+.joinForm input::placeholder,
+.joinForm textarea::placeholder{
+    font-size: 14px;
+    color: #333;
+}
+.joinForm input:focus{
+    outline: none !important;
+}
+.checktext{
+    font-size: 14px;
+    margin-left: 10px;
+    position: relative;
+    top: -2px;
+}
+.message{
+    border: none;
+    border-bottom: 1px solid #3333;
+    font-size: 14px;
+    resize: none;
+    background-color: transparent;
+    border-radius: 0;
+    color: #333;
+}
+.join-heading{
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+.join__wrap{
+    width: 100%;
+    background-color: #eae6e628;
+}
+.joinForm input:focus{
+    border: 0 !important;
+    outline: none !important;
+}
+
+
+
+.close {
+    font-size: 1.5rem;
+  }
+  
+  .col-12 img{
+    opacity: 0.7;
+    cursor: pointer;
+    margin: 2rem;
+    width: 93%;
+    overflow: hidden;
+  }
+  
+  .col-12 img:hover {
+    opacity: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+.carousel-item img{
+    width: 10%;
+}
+
+
+.o-x{
+    overflow-x: hidden;
+}
+
+
+/* -------------------press-content-------------- */
+.press-content span{
+    font-size: 12px;
+    margin: .4rem 0;
+}
+.press-content h4{
+    font-size: 22px;
+    font-weight: 500;
+}
+.press-content p{
+    font-size: 15px;
+}
+
+
+
+
+
+@media screen and (min-width: 750px) {
+    .main__text{
+        position: absolute;
+        top: 150px;
+        left: 50px;
+        width: 80%;
+    }
+    .main__text h1{
+        font-size: 2.4rem;
+    }
+    .main__text span{
+        font-size: 2.8rem;
+    }
+    .main__text p{
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (min-width: 950px) {
+    .hero__section{
+        width: 100%;
+    }
+    .main__text{
+
+        width: 50%;
+    }
+    .hero__section img{
+        width: 100%;
+        height: 431px;
+        object-fit: cover;
+    }
+    .about-banner{
+        width: 100%;
+        height: 531px;
+        object-fit: cover;
+    }
+}
